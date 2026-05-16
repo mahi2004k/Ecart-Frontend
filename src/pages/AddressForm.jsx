@@ -96,7 +96,7 @@ const AddressForm = () => {
         handler: async function (response) {
           try {
             const verifyRes = await axios.post(
-              `${import.meta.env.VITE_URL}/api/v1/orders/verify-payment`,
+              `${import.meta.env.VITE_BACKEND_URL}/api/v1/orders/verify-payment`,
               response,
               {
                 headers: {
